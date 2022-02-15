@@ -1,30 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Lab 2</title>
-  <link rel="stylesheet" href="/styles.css">
-</head>
+        <title>Yin-Chen You - Weather Station</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
 
-<body>
+    <body>
+        <header class="navbar">
+            <h4>Weather Station</h4>
 
-  <h1 class='header'>Lab 2</h1>
-  <form class='paragraph'>
-    <label>Enter a U.S. city</label>
-    <input id="weatherInput" type="text"></input><br/>
-    <input id="weatherSubmit" type="submit" value="Submit"></input>
-  </form>
-  <div id="weatherResults">
-  </div>
-  <div id="forecastResults">
-	</div>
-  <div class = 'footer'><a href='https://github.com/BYUCS260/weather-app-dstone42'>Github Repo Link</a></div>
+            <form class="display">
+                <input
+                  id="weatherInput"
+                  class="form-control"
+                  type="search"
+                  placeholder="Enter City, State"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn"
+                  type="submit"
+                  id="weatherSubmit"
+                >
+                  <i class="bi-search"></i>
+                </button>
+              </form>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-  <script text="type/javascript" src="/script.js">
-  </script>
+        </header>
 
-</body>
+        <main class="">
+            <section id="weatherResults">
+                <h1>Welcome to Weather Station! <br>
+                    Enter desired city or state to view their weather!
+                </h1>
+                <!-- <h1>Weather in Provo</h1>
+                <img src="http://openweathermap.org/img/w/04d.png">
+                <h1></h1>
+                <p>broken clouds</p> -->
+            </section>
+            <section id="forecastResults1"></section>
+            <section id="forecastResults2"></section>
+            <section id="forecastResults3"></section>
+          </main>
 
+        <footer>
+            <a href="https://github.com/BYUCS260/weather-app-YuiZoldyck">Source</a>
+        </footer>
+        
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    </body>
 </html>
+
